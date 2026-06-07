@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+</head>
+
+<body>
+
+<h1>Restaurant Menu</h1>
+
+<table border="1">
+
+<tr>
+<th>Food Item</th>
+<th>Price</th>
+<th>Stock</th>
+</tr>
+
+{% for item in menu %}
+
+<tr>
+
+<td>{{ item.item_name }}</td>
+
+<td>{{ item.price }}</td>
+
+<td>{{ item.stock }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/order/">Place Order</a>
+
+</body>
+</html>
